@@ -1,0 +1,20 @@
+# https://numtide.github.io/devshell
+[[commands]]
+package = "devshell.cli"
+help = "Per project developer environments"
+[[commands]]
+package = "go"
+[[commands]]
+package = "lazygit"
+[[commands]]
+package = "drawio"
+[[commands]]
+package = "jq"
+
+[[env]]
+name = "TestEnvVar01"
+value = "01"
+[[env]]
+name = "TestEnvVar02"
+value = "02"
+
