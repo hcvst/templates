@@ -3,9 +3,9 @@
 pkgs.mkShell {
   name="python-venv";
   buildInputs = [
-    pkgs.python39
-    pkgs.python39Packages.ipython
-    pkgs.python39Packages.ipykernel
+    pkgs.python311
+    pkgs.python311Packages.ipython
+    pkgs.python311Packages.ipykernel
   ];
   shellHook = ''
     activation_script=./.venv/bin/activate
