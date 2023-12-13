@@ -8,6 +8,8 @@ pkgs.mkShell {
     pkgs.python39Packages.certbot
   ];
 
+  # LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
+
   LD_LIBRARY_PATH = builtins.concatStringsSep ":" [
     "${pkgs.lib.makeLibraryPath [pkgs.zlib]}"
     "${pkgs.stdenv.cc.cc.lib}/lib"
